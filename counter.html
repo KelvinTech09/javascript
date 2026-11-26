@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter</title>
+    </head>
+    <body>
+        <h1>0</h1>
+        <button onclick="IncreaseCount()">INCREMENT</button>
+        <button onclick="DecreaseCount()">DECREMENT</button>
+
+        <script>
+
+            let count = 0;
+            const heading = document.querySelector('h1');
+
+            function IncreaseCount(){
+                count++;
+                heading.textContent = count;
+            }
+
+            function DecreaseCount(){
+                count--;
+                heading.textContent = count;
+            }
+
+            document.querySelector('body').style.backgroundColor = "#E8837C";
+
+        </script>
+
+    </body>
+</html>
